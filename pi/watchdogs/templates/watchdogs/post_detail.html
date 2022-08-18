@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% block title %} Watchdogs - Detalhe {% endblock title %}
+{% block content %}
+        <div class="post-entry">
+            <h2>{{ object.titulo }}</h2>
+            <p>{{ object.conteudo }}</p>
+        </div>
+        <a href="{{ object.get_absolute_url_update }}">+ Editar Postagem do Blog</a>
+{% endblock content %}
