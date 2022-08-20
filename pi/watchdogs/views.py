@@ -21,7 +21,7 @@ class WatchdogsDetailView(DetailView):
 class WatchdogsCreateView(SuccessMessageMixin, CreateView):
     model = Post
     template_name = 'watchdogs/post_new.html'
-    fields = ('autor','titulo','slug','conteudo')
+    fields = ('autor','titulo','conteudo')
     success_message = "%(field)s - criado com sucesso"
 
     def get_success_message(self, cleaned_data):
